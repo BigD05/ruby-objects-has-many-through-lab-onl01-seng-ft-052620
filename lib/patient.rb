@@ -20,8 +20,8 @@ class Patient
    end
 
   def doctors
-   self.appointments. do |appointment|
-      appointment.patient
-    end
-  end
+   self.appointments.map { |appointment|
+      appointment.patient}
+    end 
+   
 end
