@@ -20,8 +20,8 @@ class Patient
    end
 
   def doctors
-   self.appointments.map { |appointment|
-      appointment.patient}
+   self.appointments.map { |doctor|
+      doctor.appointments}
     end 
    
 end
